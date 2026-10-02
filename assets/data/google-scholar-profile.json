@@ -1,0 +1,99 @@
+{
+  "source": "https://scholar.google.com/citations?user=BUrEXCwAAAAJ&hl=en",
+  "profile_id": "BUrEXCwAAAAJ",
+  "collected_at": "2026-10-02",
+  "dynamic_data_notice": "Citation metrics and the publication list can change after this collection date.",
+  "name": "Guo Weixiang",
+  "other_names": [
+    "Weixiang Guo"
+  ],
+  "affiliation": "Nanyang Technological University",
+  "verified_email_domain": "e.ntu.edu.sg",
+  "research_interests": [
+    "Robotics",
+    "Autonomous Systems",
+    "VLA",
+    "Perception and Planning"
+  ],
+  "metrics": {
+    "citations": {
+      "all": 1,
+      "since_2021": 1
+    },
+    "h_index": {
+      "all": 1,
+      "since_2021": 1
+    },
+    "i10_index": {
+      "all": 0,
+      "since_2021": 0
+    }
+  },
+  "profile_photo": "../images/materials/google-scholar-profile.jpg",
+  "public_coauthors": [
+    {
+      "name": "HU TIANXIN",
+      "profile_id": "qyZt-rQAAAAJ",
+      "affiliation": "School of Electrical and Electronic Engineering, Nanyang Technological University",
+      "verified_email_domain": "e.ntu.edu.sg"
+    },
+    {
+      "name": "Rui Qian",
+      "profile_id": "ezQHNKwAAAAJ",
+      "affiliation_as_listed": "Nanyang Technology University",
+      "verified_email_domain": "e.ntu.edu.sg"
+    }
+  ],
+  "publications": [
+    {
+      "scholar_citation_id": "BUrEXCwAAAAJ:zYLM7Y9cAGgC",
+      "title": "TGSFormer: Scalable Temporal Gaussian Splatting for Embodied Semantic Scene Completion",
+      "authors": [
+        "Rui Qian",
+        "Haozhi Cao",
+        "Tianchen Deng",
+        "Tianxin Hu",
+        "Weixiang Guo",
+        "Shenghai Yuan",
+        "Lihua Xie"
+      ],
+      "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "venue_short": "CVPR 2026",
+      "year": 2026,
+      "pages": "11881-11890",
+      "citations_at_collection": 1,
+      "paper_page": "https://openaccess.thecvf.com/content/CVPR2026/html/Qian_TGSFormer_Scalable_Temporal_Gaussian_Splatting_for_Embodied_Semantic_Scene_Completion_CVPR_2026_paper.html",
+      "pdf": "../files/papers/tgsformer-cvpr-2026.pdf",
+      "arxiv": "https://arxiv.org/abs/2512.00300",
+      "supplementary": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Qian_TGSFormer_Scalable_Temporal_CVPR_2026_supplemental.pdf",
+      "visuals": [
+        "../images/materials/tgsformer-pipeline.png",
+        "../images/materials/tgsformer-introduction.png"
+      ]
+    },
+    {
+      "scholar_citation_id": "BUrEXCwAAAAJ:IjCSPb-OGe4C",
+      "title": "Energy-Constrained Navigation for Planetary Rovers with Singular Internal Power Source",
+      "authors": [
+        "Tianxin Hu",
+        "Weixiang Guo",
+        "Rui Qian",
+        "Jiaye Jin",
+        "Haoran Zhao",
+        "Shenghai Yuan",
+        "Lihua Xie"
+      ],
+      "venue": "2026 IEEE 20th International Conference on Control and Automation",
+      "venue_short": "ICCA 2026 Oral",
+      "publication_date": "2026-06-16",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICCA69928.2026.11618131",
+      "paper_page": "https://ieeexplore.ieee.org/document/11618131",
+      "citations_at_collection": 0,
+      "source_pages_value": "1448-4553",
+      "source_pages_note": "Scholar and Crossref currently expose this apparently malformed page range; omit it from the homepage until verified.",
+      "visual": "../images/materials/icca-2026-energy-constrained-navigation.jpg",
+      "display_note": "Keep the existing homepage presentation unchanged, per author request."
+    }
+  ]
+}

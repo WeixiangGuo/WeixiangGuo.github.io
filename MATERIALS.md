@@ -3,6 +3,53 @@
 Collected on 2026-10-02 for the next homepage revision. Files are stored locally
 so the final page does not depend on other personal websites remaining online.
 
+## Google Scholar profile
+
+- Profile: [Guo Weixiang](https://scholar.google.com/citations?user=BUrEXCwAAAAJ&hl=en)
+- Scholar ID: `BUrEXCwAAAAJ`
+- Name variant: Weixiang Guo
+- Affiliation: Nanyang Technological University
+- Research interests: Robotics, Autonomous Systems, VLA, Perception and Planning
+- Snapshot date: 2026-10-02
+- Snapshot metrics: 1 citation, h-index 1, i10-index 0
+- Structured snapshot:
+  [`assets/data/google-scholar-profile.json`](assets/data/google-scholar-profile.json)
+- Public Scholar profile image:
+  [`assets/images/materials/google-scholar-profile.jpg`](assets/images/materials/google-scholar-profile.jpg)
+
+Scholar citation counts and publication lists are dynamic. The date above must
+remain attached to any copied metrics.
+
+### Scholar publication — TGSFormer
+
+- Title: **TGSFormer: Scalable Temporal Gaussian Splatting for Embodied
+  Semantic Scene Completion**
+- Authors: Rui Qian, Haozhi Cao, Tianchen Deng, Tianxin Hu, Weixiang Guo,
+  Shenghai Yuan, Lihua Xie
+- Venue: CVPR 2026, pages 11881–11890
+- [CVF paper page](https://openaccess.thecvf.com/content/CVPR2026/html/Qian_TGSFormer_Scalable_Temporal_Gaussian_Splatting_for_Embodied_Semantic_Scene_Completion_CVPR_2026_paper.html)
+- [arXiv:2512.00300](https://arxiv.org/abs/2512.00300)
+- Local PDF:
+  [`assets/files/papers/tgsformer-cvpr-2026.pdf`](assets/files/papers/tgsformer-cvpr-2026.pdf)
+- Local visuals:
+  [`tgsformer-pipeline.png`](assets/images/materials/tgsformer-pipeline.png) and
+  [`tgsformer-introduction.png`](assets/images/materials/tgsformer-introduction.png)
+- [Official supplementary PDF](https://openaccess.thecvf.com/content/CVPR2026/supplemental/Qian_TGSFormer_Scalable_Temporal_CVPR_2026_supplemental.pdf)
+
+### Scholar publication — ICCA 2026
+
+- Title: **Energy-Constrained Navigation for Planetary Rovers with Singular
+  Internal Power Source**
+- Authors: Tianxin Hu*, Weixiang Guo*, Rui Qian, Jiaye Jin, Haoran Zhao,
+  Shenghai Yuan, Lihua Xie
+- Venue: ICCA 2026 Oral
+- DOI: [10.1109/ICCA69928.2026.11618131](https://doi.org/10.1109/ICCA69928.2026.11618131)
+- Original source visual:
+  [`assets/images/materials/icca-2026-energy-constrained-navigation.jpg`](assets/images/materials/icca-2026-energy-constrained-navigation.jpg)
+- Display decision: retain the existing homepage card, title, authors, venue text,
+  and visual treatment without redesigning or merging it with the hybrid-power
+  preprint below.
+
 ## Papers from `CV.pdf`
 
 ### J1 — STARC
