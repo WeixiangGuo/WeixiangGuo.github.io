@@ -121,3 +121,40 @@ language, and no proceedings DOI was found yet.
   [vla_fig1.jpg](https://bbbbigrui.github.io/images/icra2027/vla_fig1.jpg)
 
 `*` denotes equal contribution where specified by the source material.
+
+## IRL AirGrasp project
+
+- Source presentation: `complete_irl_report_template.pptx`
+- Working title: **IRL-Based Semantic-Risk-Aware Trajectory Planning for
+  AirGrasp**
+- Structured project data and copy:
+  [`assets/data/irl-project.json`](assets/data/irl-project.json)
+
+### Short homepage description
+
+> AirGrasp learns semantic obstacle risk from human flight demonstrations and
+> converts the inferred risk into asymmetric safety clearances. A bi-level
+> inverse reinforcement learning framework identifies risk scores in the outer
+> loop, while the inner loop optimizes a dynamically feasible trajectory for
+> collision avoidance, smoothness, flight time, and control constraints;
+> simulation and real-world flights validate the resulting behavior.
+
+Chinese reference:
+
+> AirGrasp 从人类飞行示范中学习不同障碍物的语义风险，并将风险转化为非对称安全间距。系统采用双层逆强化学习框架：外层通过模仿误差辨识风险分数，内层综合碰撞规避、平滑性、飞行时间和动力学约束优化可执行轨迹，并在仿真与真实飞行中完成验证。
+
+### Extracted assets
+
+- Final-slide IRL-optimized execution video:
+  [`assets/images/materials/irl-optimized-flight.mp4`](assets/images/materials/irl-optimized-flight.mp4)
+- Video poster:
+  [`assets/images/materials/irl-optimized-flight-poster.png`](assets/images/materials/irl-optimized-flight-poster.png)
+- AirGrasp platform overview:
+  [`assets/images/materials/irl-airgrasp-platform-overview.png`](assets/images/materials/irl-airgrasp-platform-overview.png)
+- Simulation risk-recovery result:
+  [`assets/images/materials/irl-simulation-risk-recovery.png`](assets/images/materials/irl-simulation-risk-recovery.png)
+
+The extracted video is the PowerPoint object's original `media7.mp4`, named
+`IRL` on slide 5. It is a 22.988-second, 1280 × 720, 30 fps H.264 video with AAC
+audio. The left-side human-demonstration video (`media6.mp4`) was inspected only
+for disambiguation and was not added to the site assets.

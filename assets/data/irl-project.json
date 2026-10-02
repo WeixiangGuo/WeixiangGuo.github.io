@@ -1,0 +1,59 @@
+{
+  "source_presentation": "complete_irl_report_template.pptx",
+  "source_presentation_sha256": "ad4784e474462a167a94750a247ac9b15b529f00516903b7906f4e2c7b0ddfa3",
+  "collected_at": "2026-10-02",
+  "working_title": "IRL-Based Semantic-Risk-Aware Trajectory Planning for AirGrasp",
+  "short_description_en": "AirGrasp learns semantic obstacle risk from human flight demonstrations and converts the inferred risk into asymmetric safety clearances. A bi-level inverse reinforcement learning framework identifies risk scores in the outer loop, while the inner loop optimizes a dynamically feasible trajectory for collision avoidance, smoothness, flight time, and control constraints; simulation and real-world flights validate the resulting behavior.",
+  "short_description_zh": "AirGrasp 从人类飞行示范中学习不同障碍物的语义风险，并将风险转化为非对称安全间距。系统采用双层逆强化学习框架：外层通过模仿误差辨识风险分数，内层综合碰撞规避、平滑性、飞行时间和动力学约束优化可执行轨迹，并在仿真与真实飞行中完成验证。",
+  "platform": {
+    "name": "AirGrasp aerial manipulator",
+    "weight_kg": 1.8,
+    "wheelbase_mm": 330,
+    "endurance_min": 15,
+    "compute": "NVIDIA Jetson Orin NX",
+    "flight_controller": "PX4",
+    "sensors": [
+      "Livox Mid-360 LiDAR",
+      "RealSense D455 depth camera",
+      "RGB camera"
+    ],
+    "actuation": [
+      "electric motor",
+      "servo motors",
+      "gripper"
+    ]
+  },
+  "method": {
+    "input": "Human-demonstrated flight trajectory",
+    "learned_parameters": "Semantic obstacle-risk scores and their corresponding safety clearances",
+    "outer_loop": "Minimize imitation loss between the human demonstration and the optimized trajectory to identify risk scores.",
+    "inner_loop": "Optimize a dynamically feasible trajectory over collision, smoothness, time, and dynamics costs.",
+    "clearance_mapping": "d_i = d_min + (d_max - d_min) s_i"
+  },
+  "simulation_result": {
+    "high_risk_score": 0.735,
+    "low_risk_score": 0.170,
+    "high_risk_clearance_m": 1.189,
+    "low_risk_clearance_m": 0.313,
+    "accepted_states": 21,
+    "imitation_loss": "2.07e-03"
+  },
+  "assets": {
+    "optimized_execution_video": "../images/materials/irl-optimized-flight.mp4",
+    "video_poster": "../images/materials/irl-optimized-flight-poster.png",
+    "platform_overview": "../images/materials/irl-airgrasp-platform-overview.png",
+    "simulation_result": "../images/materials/irl-simulation-risk-recovery.png"
+  },
+  "video": {
+    "source_slide": 5,
+    "source_object_name": "IRL",
+    "source_embedded_file": "ppt/media/media7.mp4",
+    "codec": "H.264",
+    "audio_codec": "AAC",
+    "width": 1280,
+    "height": 720,
+    "frame_rate_fps": 30,
+    "duration_seconds": 22.988,
+    "sha256": "05596aa92982226a43dacad677afe2c3c893eab5a90aafeb0da587df905662bf"
+  }
+}
