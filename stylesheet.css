@@ -24,6 +24,15 @@
 }
 
 @font-face {
+  font-family: "AR PL UMing CN Name";
+  src: url("assets/fonts/ar-pl-uming-cn-guoweixiang.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+90ED, U+97E6, U+7FD4;
+}
+
+@font-face {
   font-family: "Montserrat";
   src: url("assets/fonts/montserrat-variable.ttf") format("truetype");
   font-weight: 100 900;
@@ -107,7 +116,7 @@ strong { font-weight: 600; }
 .profile { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 48px; align-items: center; margin-top: 66px; }
 .name { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; margin: 0 0 22px; font-family: var(--font-heading); font-size: 44px; font-weight: 400; line-height: 1.2; letter-spacing: -.025em; }
 .name-divider { color: #a9b1bc; font-size: 27px; }
-.chinese-name { font-family: "AR PL UKai CN Name", "AR PL UKai CN", "AR PL KaitiM GB", "Kaiti SC", "STKaiti", "KaiTi", serif; font-size: 39px; font-weight: 400; letter-spacing: 0; }
+.chinese-name { font-family: "AR PL UMing CN Name", "SimSun", "Songti SC", "STSong", serif; font-size: .78em; font-weight: 400; color: #55636f; letter-spacing: 0; }
 .profile-intro { margin-top: 12px; line-height: 1.7; }
 .profile-intro--muted { color: var(--text-secondary); font-size: 15.5px; }
 .profile-portrait { margin: 0; }
@@ -244,7 +253,6 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .profile { grid-template-columns: minmax(0, 1fr) 210px; gap: 26px; }
   .avatar { border-radius: 38px; }
   .name { font-size: 38px; gap: 9px; }
-  .chinese-name { font-size: 34px; }
   .paper-row { grid-template-columns: 190px minmax(0, 1fr); gap: 22px; padding: 21px 15px; }
   .institution-row { grid-template-columns: 88px minmax(0, 1fr); gap: 5px 20px; }
   .institution-logo { width: 88px; grid-row: span 2; }
@@ -261,7 +269,6 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .profile-portrait { order: -1; align-self: center; width: 210px; margin: 0 0 26px; }
   .name { justify-content: center; gap: 10px; font-size: 36px; margin-bottom: 19px; }
   .name-divider { font-size: 22px; }
-  .chinese-name { font-size: 32px; }
   .profile-links { gap: 13px 20px; }
   .profile-link { font-size: 15px; }
   .page-section { margin-top: 38px; }
@@ -300,7 +307,6 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
 
 @media (max-width: 360px) {
   .name { font-size: 31px; gap: 8px; }
-  .chinese-name { font-size: 28px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
