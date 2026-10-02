@@ -25,6 +25,7 @@ The site uses static HTML, CSS, and JavaScript with no package installation or b
 - `font-preview.html`: visual Chinese-name font comparison tool with 73 built-in
   presets, local Word/system-font discovery in supported browsers, search, and
   browser-only font-file previews.
+- `MATERIALS.md`: source manifest for the collected papers and project visuals.
 - `assets/`: local images, fonts, and icons.
 
 ## Deployment
