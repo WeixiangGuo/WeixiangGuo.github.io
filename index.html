@@ -8,7 +8,7 @@
   <meta name="color-scheme" content="light">
   <title>Weixiang Guo | 郭韦翔</title>
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="stylesheet.css?v=song-small-20261002">
+  <link rel="stylesheet" href="stylesheet.css?v=projects-irl-aibot-20261002">
   <script src="navigation.js" defer></script>
   <script src="interactions.js" defer></script>
 </head>
@@ -95,13 +95,33 @@
 
     <section id="projects" class="page-section" data-nav-section tabindex="-1">
       <header class="section-heading"><h2 class="section-title">Projects</h2></header>
-      <article class="project-card">
-        <div class="project-mark" aria-hidden="true"><span>&lt;/&gt;</span></div>
+      <article class="project-card" aria-labelledby="irl-project-title">
+        <div class="project-media">
+          <video class="project-video" controls playsinline muted preload="none" poster="assets/images/materials/irl-optimized-flight-poster.png" width="1280" height="720" aria-label="IRL-optimized AirGrasp flight demonstration">
+            <source src="assets/images/materials/irl-optimized-flight.mp4" type="video/mp4">
+            <a href="assets/images/materials/irl-optimized-flight.mp4">Watch the IRL flight demonstration</a>.
+          </video>
+        </div>
         <div class="project-copy">
-          <p class="project-kicker">Python · Robotics Infrastructure</p>
-          <h3><a href="https://github.com/WeixiangGuo/hitachi-aibot">Hitachi CN Elevator Runner</a></h3>
-          <p>Integration tooling for Hitachi elevator Common Node interfaces, including status inspection, control workflows, and an HTTP/WebSocket adapter for robot elevator transactions.</p>
-          <a class="link-with-icon" href="https://github.com/WeixiangGuo/hitachi-aibot"><img src="assets/files/icon/github.svg" width="20" height="20" alt="">View code</a>
+          <p class="project-kicker">Inverse Reinforcement Learning · Aerial Robotics</p>
+          <h3 id="irl-project-title">IRL-Based Risk-Aware Trajectory Planning</h3>
+          <p>Developed a bi-level inverse reinforcement learning framework for AirGrasp to learn semantic obstacle risks from human flight demonstrations and translate them into adaptive safety clearances. The resulting planner generates dynamically feasible trajectories, validated in simulation and real-world flights.</p>
+          <a class="link-with-icon" href="assets/images/materials/irl-optimized-flight.mp4">Flight demo ↗</a>
+        </div>
+      </article>
+      <article class="project-card" aria-labelledby="aibot-project-title">
+        <div class="project-media">
+          <video class="project-video project-video--portrait" controls playsinline muted preload="none" poster="assets/images/materials/aibot-navigation-poster.jpg" width="544" height="720" aria-label="AIBOT autonomous mobile robot navigation demonstration">
+            <source src="assets/images/materials/aibot-autonomous-navigation.mp4" type="video/mp4">
+            <a href="assets/images/materials/aibot-autonomous-navigation.mp4">Watch the AIBOT navigation demonstration</a>.
+          </video>
+        </div>
+        <div class="project-copy">
+          <p class="project-kicker">Internship · AIBOT Technology Pte. Ltd.</p>
+          <h3 id="aibot-project-title">Autonomous Navigation &amp; Elevator Integration</h3>
+          <p>An autonomous mobile robot system developed during my internship at AIBOT, combining navigation and dynamic obstacle avoidance with Hitachi elevator-control integration for cross-floor operation in residential and commercial environments.</p>
+          <p>The elevator interface supports status monitoring, control workflows, and HTTP/WebSocket communication for robot–elevator coordination.</p>
+          <a class="link-with-icon" href="https://github.com/WeixiangGuo/hitachi-aibot"><img src="assets/files/icon/github.svg" width="20" height="20" alt="">Elevator integration code</a>
         </div>
       </article>
     </section>
