@@ -26,7 +26,7 @@ The site uses static HTML, CSS, and JavaScript with no package installation or b
 
 ## Deployment
 
-Pushing to the `main` branch triggers the included GitHub Pages workflow. The repository's Pages source should be set to **GitHub Actions**.
+Pushing to the `main` branch triggers the repository's GitHub Pages deployment. The included workflow is retained as a manual fallback and does not start a duplicate deployment on every push.
 
 ## Credits and assets
 
