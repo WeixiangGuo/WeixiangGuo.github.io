@@ -22,6 +22,7 @@ The site uses static HTML, CSS, and JavaScript with no package installation or b
 - `stylesheet.css`: layout, typography, colors, and responsive styles.
 - `navigation.js`: responsive section navigation.
 - `interactions.js`: research filtering and figure preview.
+- `font-preview.html`: visual Chinese-name font comparison tool.
 - `assets/`: local images, fonts, and icons.
 
 ## Deployment
