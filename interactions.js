@@ -10,8 +10,8 @@
     papers.forEach(function (paper) {
       paper.hidden = !showAll && paper.dataset.highlight !== "true";
     });
-    heading.textContent = showAll ? "All Research Papers" : "Highlight Research";
-    button.textContent = showAll ? "Highlight Research" : "All Research Papers";
+    heading.textContent = showAll ? "All Research" : "Selected Research";
+    button.textContent = showAll ? "Selected Research" : "All Research";
     button.setAttribute("aria-expanded", String(showAll));
     button.setAttribute("aria-label", showAll ? "Show highlighted research only" : "Show all research papers");
     if (announce && status) {
