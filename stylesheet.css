@@ -203,6 +203,9 @@ strong { font-weight: 600; }
 .project-copy h3 a:hover { color: var(--accent-orange); }
 .project-copy > p:not(.project-kicker) { margin-bottom: 13px; color: inherit; font-size: inherit; line-height: inherit; }
 .project-kicker { color: inherit; font-size: inherit; font-weight: 700; font-style: italic; letter-spacing: 0; text-transform: none; }
+.project-details { margin: 10px 0 13px; padding-left: 20px; color: inherit; font-size: inherit; line-height: 1.6; }
+.project-details li + li { margin-top: 7px; }
+.project-details strong { font-weight: 700; }
 
 @media (max-width: 700px) {
   .projects-section .section-title { font-size: 1.6rem; }
