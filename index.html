@@ -21,8 +21,9 @@
         <span class="section-nav__indicator" aria-hidden="true"></span>
         <ol class="section-nav__list" id="section-nav-list">
           <li class="section-nav__item"><a class="section-nav__link" href="#about">About</a></li>
-          <li class="section-nav__item"><a class="section-nav__link" href="#research">Research</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#research">Publications</a></li>
           <li class="section-nav__item"><a class="section-nav__link" href="#projects">Projects</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#patents">Patents</a></li>
           <li class="section-nav__item"><a class="section-nav__link" href="#education">Education</a></li>
         </ol>
       </div>
@@ -57,14 +58,23 @@
       </figure>
     </section>
 
-    <section id="research" class="page-section research-section" data-nav-section data-nav-label="Research" tabindex="-1">
+    <section id="research" class="page-section research-section" data-nav-section data-nav-label="Publications" tabindex="-1">
       <header class="section-heading research-heading">
-        <h2 class="section-title" id="research-heading">Selected Research</h2>
-        <button class="research-toggle" id="research-toggle" type="button" aria-controls="research-papers" aria-expanded="false" hidden>All Research</button>
+        <h2 class="section-title" id="research-heading">Publications</h2>
+        <button class="research-toggle" id="research-toggle" type="button" aria-controls="research-papers" aria-expanded="false" hidden>All Publications</button>
       </header>
       <p class="paper-meta-note">* Equal contribution</p>
       <p class="sr-only" id="research-status" role="status" aria-live="polite"></p>
       <div id="research-papers">
+        <article class="paper-row publication-featured" data-highlight="true" aria-labelledby="vla-title">
+          <div class="paper-content">
+            <h3 class="papertitle" id="vla-title">From Local Whole-Body VLA Behaviors to Scene-Scale Aerial Manipulation</h3>
+            <p class="authors"><span class="author-self">Weixiang Guo*</span>, Rui Jin*, Haotian Jin, Xinhang Xu, Ruiyang Liu, Haoran Zhao, Yi Wang, Weiqi Gai, Kun Cao, Lihua Xie</p>
+            <p class="venue-full"><strong>submitted to ICRA 2027</strong></p>
+          </div>
+          <a class="paper-figure" href="assets/images/materials/vla-scene-scale-aerial-manipulation.jpg" data-figure data-caption="From Local Whole-Body VLA Behaviors to Scene-Scale Aerial Manipulation — Overview" aria-label="Enlarge the VLA aerial manipulation overview"><img src="assets/images/materials/vla-scene-scale-aerial-manipulation.jpg" alt="Scene-scale aerial manipulation framework connecting bottle grasping and plant watering through navigation and VLA trajectories" width="2195" height="997" loading="lazy"></a>
+        </article>
+
         <article class="paper-row highlight-paper" data-highlight="true" aria-labelledby="lunarplan-title">
           <a class="paper-figure" href="assets/images/lunarplan.webp" data-figure data-caption="Energy-constrained navigation for planetary rovers" aria-label="Enlarge the LunarPlan research figure"><img src="assets/images/lunarplan.webp" alt="Planetary rover energy-constrained navigation overview" width="1393" height="964" loading="lazy"></a>
           <div class="paper-content">
@@ -72,19 +82,6 @@
             <p class="authors">Tianxin Hu*, <span class="author-self">Weixiang Guo*</span>, Rui Qian, Jiaye Jin, Haoran Zhao, Shenghai Yuan, Lihua Xie</p>
             <p class="venue-full">IEEE International Conference on Control &amp; Automation (ICCA), 2026 · Oral Presentation</p>
             <p class="paper-description">A trajectory-planning framework for planetary rovers that accounts for instantaneous power and cumulative energy constraints.</p>
-          </div>
-        </article>
-
-        <article class="paper-row highlight-paper" data-highlight="true" aria-labelledby="starc-title">
-          <a class="paper-figure" href="assets/images/starc.webp" data-figure data-caption="STARC — See-through-wall augmented reality for emergency response" aria-label="Enlarge the STARC overview figure"><img src="assets/images/starc.webp" alt="STARC augmented reality and robot sensing framework" width="1940" height="764" loading="lazy"></a>
-          <div class="paper-content">
-            <h3 class="papertitle" id="starc-title"><a href="https://arxiv.org/abs/2509.15507">STARC: See-Through-Wall Augmented Reality Framework for Human-Robot Collaboration in Emergency Response</a></h3>
-            <p class="authors">Shenghai Yuan*, <span class="author-self">Weixiang Guo*</span>, Tianxin Hu, Yu Yang, Jinyu Chen, Rui Qian, Zhongyuan Liu, Lihua Xie</p>
-            <p class="venue-full">Preprint, 2025</p>
-            <p class="paper-description">A human-robot collaboration framework that fuses responder- and robot-mounted LiDAR sensing to visualize occluded people and hazards.</p>
-            <div class="paper-links-group">
-              <a class="link-with-icon" href="https://arxiv.org/abs/2509.15507"><img src="assets/files/icon/arxiv.svg" width="20" height="20" alt="">Paper</a>
-            </div>
           </div>
         </article>
 
@@ -112,6 +109,21 @@
           <h3><a href="https://github.com/WeixiangGuo/hitachi-aibot">Hitachi CN Elevator Runner</a></h3>
           <p>Integration tooling for Hitachi elevator Common Node interfaces, including status inspection, control workflows, and an HTTP/WebSocket adapter for robot elevator transactions.</p>
           <a class="link-with-icon" href="https://github.com/WeixiangGuo/hitachi-aibot"><img src="assets/files/icon/github.svg" width="20" height="20" alt="">View code</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="patents" class="page-section" data-nav-section tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">Patents</h2></header>
+      <article class="paper-row" aria-labelledby="starc-title">
+        <a class="paper-figure" href="assets/images/starc.webp" data-figure data-caption="STARC — See-through-wall augmented reality for emergency response" aria-label="Enlarge the STARC overview figure"><img src="assets/images/starc.webp" alt="STARC augmented reality and robot sensing framework" width="1940" height="764" loading="lazy"></a>
+        <div class="paper-content">
+          <h3 class="papertitle" id="starc-title">STARC: See-Through-Wall Augmented Reality Framework for Human-Robot Collaboration in Emergency Response</h3>
+          <p class="venue-full">Patent accepted</p>
+          <p class="paper-description">A human-robot collaboration framework that fuses responder- and robot-mounted LiDAR sensing to visualize occluded people and hazards.</p>
+          <div class="paper-links-group">
+            <a class="link-with-icon" href="https://arxiv.org/abs/2509.15507"><img src="assets/files/icon/arxiv.svg" width="20" height="20" alt="">Technical reference</a>
+          </div>
         </div>
       </article>
     </section>

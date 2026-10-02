@@ -10,10 +10,10 @@
     papers.forEach(function (paper) {
       paper.hidden = !showAll && paper.dataset.highlight !== "true";
     });
-    heading.textContent = showAll ? "All Research" : "Selected Research";
-    button.textContent = showAll ? "Selected Research" : "All Research";
+    heading.textContent = "Publications";
+    button.textContent = showAll ? "Selected Publications" : "All Publications";
     button.setAttribute("aria-expanded", String(showAll));
-    button.setAttribute("aria-label", showAll ? "Show highlighted research only" : "Show all research papers");
+    button.setAttribute("aria-label", showAll ? "Show selected publications only" : "Show all publications");
     if (announce && status) {
       const count = papers.filter(function (paper) { return !paper.hidden; }).length;
       status.textContent = "Showing " + count + (showAll ? " research papers." : " highlighted papers.");
