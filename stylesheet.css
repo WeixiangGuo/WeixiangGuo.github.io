@@ -107,7 +107,7 @@ strong { font-weight: 600; }
 .profile { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 48px; align-items: center; margin-top: 66px; }
 .name { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; margin: 0 0 22px; font-family: var(--font-heading); font-size: 44px; font-weight: 400; line-height: 1.2; letter-spacing: -.025em; }
 .name-divider { color: #a9b1bc; font-size: 27px; }
-.chinese-name { font-family: "AR PL UKai CN Name", "AR PL UKai CN", "AR PL KaitiM GB", "Kaiti SC", "STKaiti", "KaiTi", serif; font-size: 39px; font-weight: 700; letter-spacing: 0; }
+.chinese-name { font-family: "Ma Shan Zheng", "Kaiti SC", "STKaiti", "KaiTi", serif; font-size: 39px; font-weight: 700; letter-spacing: 0; }
 .profile-intro { margin-top: 12px; line-height: 1.7; }
 .profile-intro--muted { color: var(--text-secondary); font-size: 15.5px; }
 .profile-portrait { margin: 0; }
