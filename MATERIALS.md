@@ -50,9 +50,9 @@ remain attached to any copied metrics.
   and visual treatment without redesigning or merging it with the hybrid-power
   preprint below.
 
-## Papers from `CV.pdf`
+## Patent-track material
 
-### J1 — STARC
+### STARC
 
 - Title: **STARC: See-Through-Wall Augmented Reality Framework for Human-Robot
   Collaboration in Emergency Response**
@@ -60,6 +60,11 @@ remain attached to any copied metrics.
   Rui Qian, Zhongyuan Liu, Lihua Xie
 - arXiv: [2509.15507](https://arxiv.org/abs/2509.15507)
 - Local PDF: [`assets/files/papers/starc-arxiv-2509.15507.pdf`](assets/files/papers/starc-arxiv-2509.15507.pdf)
+- Current status: patent accepted; article submission has been discontinued, as
+  confirmed by the author on 2026-10-02. The arXiv PDF is retained only as a
+  technical reference.
+
+## Publications from the CV and Scholar profile
 
 ### J2 — Energy-Constrained Navigation
 
