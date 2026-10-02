@@ -94,9 +94,9 @@ strong { font-weight: 600; }
 .profile-intro { margin-top: 12px; line-height: 1.7; }
 .profile-intro--muted { color: var(--text-secondary); font-size: 15.5px; }
 .profile-portrait { margin: 0; }
-.portrait-caption { margin-top: 12px; text-align: center; color: var(--text-secondary); font-size: 13px; line-height: 1.55; }
 .avatar { width: 100%; height: auto; object-fit: contain; object-position: center; border-radius: 44px; box-shadow: 0 10px 30px rgb(25 52 66 / 12%); }
 .profile-links { display: flex; gap: 12px 21px; flex-wrap: wrap; align-items: center; margin-top: 21px; }
+.portrait-links { justify-content: center; margin-top: 16px; }
 .profile-link { display: inline-flex; align-items: center; gap: 7px; font-size: 15.5px; color: var(--link-color); }
 .profile-link img, .profile-link svg { width: 22px; height: 22px; object-fit: contain; flex-shrink: 0; }
 .profile-link--rednote img { width: 24px; height: 24px; }
