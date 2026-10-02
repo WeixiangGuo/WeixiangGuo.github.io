@@ -1,33 +1,3 @@
-(function initResearchSelection() {
-  const button = document.getElementById("research-toggle");
-  const heading = document.getElementById("research-heading");
-  const status = document.getElementById("research-status");
-  const papers = Array.from(document.querySelectorAll("#research-papers .paper-row"));
-  if (!button || !heading || papers.length === 0) return;
-
-  let showAll = false;
-  function updateSelection(announce) {
-    papers.forEach(function (paper) {
-      paper.hidden = !showAll && paper.dataset.highlight !== "true";
-    });
-    heading.textContent = "Publications";
-    button.textContent = showAll ? "Selected Publications" : "All Publications";
-    button.setAttribute("aria-expanded", String(showAll));
-    button.setAttribute("aria-label", showAll ? "Show selected publications only" : "Show all publications");
-    if (announce && status) {
-      const count = papers.filter(function (paper) { return !paper.hidden; }).length;
-      status.textContent = "Showing " + count + (showAll ? " research papers." : " highlighted papers.");
-    }
-  }
-
-  button.addEventListener("click", function () {
-    showAll = !showAll;
-    updateSelection(true);
-  });
-  updateSelection(false);
-  button.hidden = false;
-})();
-
 (function initFigurePreview() {
   const dialog = document.getElementById("figure-dialog");
   const image = document.getElementById("figure-image");

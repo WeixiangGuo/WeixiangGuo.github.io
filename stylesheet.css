@@ -14,6 +14,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/montserrat-variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --text-primary: #17212b;
   --text-secondary: #43515f;
@@ -118,13 +126,8 @@ strong { font-weight: 600; }
 .news-archive summary { width: fit-content; color: var(--link-color); font-size: 14px; cursor: pointer; }
 .news-archive .news-list { margin-top: 12px; }
 
-/* Publications: two highlighted works by default; all papers remain in HTML. */
-.research-heading { margin-bottom: 8px; }
-.research-toggle { border: 0; border-bottom: 1px solid #b9cce7; padding: 2px 0; background: transparent; color: var(--link-color); font-size: 15.5px; cursor: pointer; }
-.research-toggle:hover { color: var(--accent-orange); }
-.paper-meta-note { margin: 0 0 18px; color: var(--text-tertiary); font-size: 14px; }
+/* Shared research and patent assets. */
 .paper-row { display: grid; grid-template-columns: 225px minmax(0, 1fr); gap: 27px; align-items: center; padding: 23px 18px; margin: 13px -18px; }
-.highlight-paper { background: var(--highlight-blue); }
 .paper-figure { display: block; min-width: 0; }
 .paper-figure img { width: 100%; height: auto; max-height: 215px; object-fit: contain; transition: opacity .18s ease; }
 .paper-figure:hover img { opacity: .85; }
@@ -140,15 +143,27 @@ strong { font-weight: 600; }
 .link-with-icon { display: inline-flex; align-items: center; gap: 7px; font-size: 15.5px; font-weight: 500; }
 .link-with-icon img, .link-with-icon svg { width: 20px; height: 20px; flex-shrink: 0; object-fit: contain; }
 
-/* Featured publication follows the reference's text-above-figure layout. */
-.paper-row.publication-featured { display: block; margin: 0 0 28px; padding: 0 0 20px; border-bottom: 1px solid var(--line); background: transparent; }
-.publication-featured .papertitle { margin-bottom: 3px; color: var(--text-primary); font-weight: 700; }
-.publication-featured .authors { color: var(--text-primary); }
-.publication-featured .author-self { padding: 0; font-weight: 700; }
-.publication-featured .author-self::before { content: none; }
-.publication-featured .venue-full { margin-top: 3px; }
-.publication-featured .paper-figure { width: 100%; max-width: 840px; margin-top: 10px; }
-.publication-featured .paper-figure img { max-height: none; border-radius: 6px; box-shadow: 0 2px 5px rgb(0 0 0 / 10%); }
+/* Publications match Rui Jin's Montserrat, text-above-figure layout. */
+.research-section { font-family: "Montserrat", sans-serif; font-size: 15px; line-height: 1.6; color: #333; }
+.research-section .section-heading { margin-bottom: 10px; }
+.research-section .section-title { margin: 10px 0; font-family: inherit; font-size: 30px; font-weight: 400; line-height: 1.5; }
+.publication-item { margin: 0 0 28px; padding: 0 0 16px; border-bottom: 1px solid #f0f0f0; overflow-wrap: anywhere; }
+.publication-item:last-child { border-bottom: 0; }
+.publication-item .papertitle { margin: 0; font-family: inherit; font-size: 1.1em; font-weight: 700; line-height: inherit; color: #000; }
+.publication-item .authors { color: inherit; font-size: inherit; line-height: inherit; }
+.publication-item .author-self { padding: 0; color: inherit; font-weight: 700; }
+.publication-item .author-self::before { content: none; }
+.publication-item .venue-full { margin: 0; color: inherit; font-size: inherit; font-style: italic; line-height: inherit; }
+.publication-item strong { font-weight: 700; }
+.publication-link { color: #447ec9; font-weight: 500; font-style: normal; }
+.publication-link:hover { color: #447ec9; opacity: .7; }
+.publication-item .paper-figure { width: 100%; max-width: 840px; margin: 10px 0 15px; }
+.publication-item .paper-figure img { max-height: none; border-radius: 6px; box-shadow: 0 2px 5px rgb(0 0 0 / 10%); }
+
+@media (max-width: 700px) {
+  .publication-item { margin-bottom: 22px; padding-bottom: 12px; }
+  .publication-item .paper-figure { max-width: 480px; }
+}
 
 /* Projects */
 .project-card { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 30px; align-items: center; padding: 27px 29px; border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(135deg, #f7fafb, #fff); box-shadow: 0 8px 28px rgb(35 73 90 / 5%); }
@@ -243,9 +258,6 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .section-heading { margin-bottom: 17px; }
   .news-list li { grid-template-columns: 74px minmax(0, 1fr); gap: 10px; font-size: 15.5px; }
   .news-list time { font-size: 14.5px; }
-  .research-heading { gap: 8px 20px; margin-bottom: 10px; }
-  .research-toggle { font-size: 15px; }
-  .paper-meta-note { font-size: 13.5px; }
   .paper-row { grid-template-columns: 1fr; gap: 18px; padding: 20px 15px; margin-top: 15px; }
   .paper-figure img { max-height: 215px; }
   .papertitle { font-size: 18px; line-height: 1.5; }
@@ -285,7 +297,7 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
 }
 
 @media print {
-  .section-nav, .skip-link, .back-top, .figure-dialog, .research-toggle { display: none !important; }
+  .section-nav, .skip-link, .back-top, .figure-dialog { display: none !important; }
   .page-shell { width: 100%; }
   .profile { margin-top: 0; }
   .page-section { margin-top: 24px; }
