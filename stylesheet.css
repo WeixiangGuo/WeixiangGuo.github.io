@@ -196,7 +196,9 @@ strong { font-weight: 600; }
 .project-video { display: block; width: 100%; height: auto; border-radius: 8px; background: #101820; }
 .project-video--portrait { width: min(100%, 257px); }
 .project-copy { min-width: 0; }
-.project-copy h3 { margin: 2px 0 7px; font-family: inherit; font-size: 1.1em; font-weight: 700; line-height: inherit; color: #000; }
+.project-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 4px 16px; margin-bottom: 7px; }
+.project-dates { margin: 0; color: #757575; font-size: inherit; font-style: italic; white-space: nowrap; }
+.project-copy h3 { margin: 0; font-family: inherit; font-size: 1.1em; font-weight: 700; line-height: inherit; color: #000; }
 .project-copy h3 a { color: var(--text-primary); }
 .project-copy h3 a:hover { color: var(--accent-orange); }
 .project-copy > p:not(.project-kicker) { margin-bottom: 13px; color: inherit; font-size: inherit; line-height: inherit; }
@@ -204,6 +206,7 @@ strong { font-weight: 600; }
 
 @media (max-width: 700px) {
   .projects-section .section-title { font-size: 1.6rem; }
+  .project-heading { grid-template-columns: 1fr; }
 }
 
 /* Education and dated experience */
