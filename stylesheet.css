@@ -173,8 +173,8 @@ strong { font-weight: 600; }
 .publication-item .author-self::before { content: none; }
 .publication-item .venue-full { margin: 0; color: inherit; font-size: inherit; font-style: italic; line-height: inherit; }
 .publication-item strong { font-weight: 700; }
-.publication-link { color: #447ec9; font-weight: 500; font-style: normal; }
-.publication-link:hover { color: #447ec9; opacity: .7; }
+.publication-link { color: var(--link-color); font-weight: 500; font-style: normal; }
+.publication-link:hover { color: var(--link-color); }
 .publication-item .paper-figure { width: 100%; max-width: 840px; margin: 10px 0 15px; }
 .publication-item .paper-figure img { max-height: none; border-radius: 6px; box-shadow: 0 2px 5px rgb(0 0 0 / 10%); }
 .publication-visuals { display: grid; grid-template-columns: var(--visual-columns, minmax(0, 1fr)); gap: 12px; align-items: start; width: 100%; max-width: 840px; margin: 10px 0 15px; }
