@@ -189,7 +189,7 @@ strong { font-weight: 600; }
 /* Projects */
 .projects-section { font-family: "Montserrat", sans-serif; font-size: 15px; line-height: 1.6; color: #333; }
 .projects-section .section-title { font-family: inherit; font-size: 30px; font-weight: 400; line-height: 1.5; }
-.projects-section .link-with-icon { font-family: inherit; font-size: inherit; font-weight: 500; color: #447ec9; }
+.projects-section .link-with-icon { font-family: inherit; font-size: inherit; font-weight: 500; color: var(--link-color); }
 .project-card { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 30px; align-items: center; padding: 25px 0; }
 .project-card + .project-card { border-top: 1px solid var(--line); }
 .project-media { min-width: 0; display: flex; justify-content: center; }
