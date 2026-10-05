@@ -261,9 +261,15 @@ strong { font-weight: 600; }
 .experience-list .institution-row:first-child { padding-top: 0; }
 .experience-list .institution-row:last-child { padding-bottom: 0; }
 
+.honors-section { font-family: "Montserrat", sans-serif; font-size: 15px; line-height: 1.6; color: #333; }
+.honors-section .section-title { font-family: inherit; font-size: 30px; font-weight: 400; line-height: 1.5; }
 .awards-list { list-style: none; padding: 0; margin: 0; }
-.awards-list li { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 12px; padding: 3px 0; font-size: 17px; line-height: 1.45; letter-spacing: 0; }
-.award-year { font-size: 16px; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.awards-list li { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 18px; padding: 14px 0; border-bottom: 1px solid #f1f1f1; }
+.awards-list li:first-child { padding-top: 0; }
+.awards-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.awards-list strong { font-weight: 600; color: #111; }
+.award-year { font-size: 14px; color: #666; font-weight: 500; font-variant-numeric: tabular-nums; }
+.award-detail { margin: 3px 0 0; font-size: 14px; color: #666; }
 .language-score { font-size: 17px; line-height: 1.65; }
 .language-score span { color: var(--text-secondary); }
 .beyond-layout p { font-size: 16.5px; line-height: 1.7; }
@@ -347,8 +353,9 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .institution-copy h3 { font-size: 17px; }
   .institution-copy p { font-size: 15.5px; }
   .institution-date { font-size: 15px; white-space: normal; }
-  .awards-list li { font-size: 17px; grid-template-columns: 75px minmax(0, 1fr); gap: 9px; padding: 3px 0; }
-  .award-year { font-size: 15.5px; }
+  .honors-section .section-title { font-size: 1.6rem; }
+  .awards-list li { grid-template-columns: 1fr; gap: 4px; }
+  .award-year { font-size: 13px; }
   .language-score { font-size: 16px; }
   .beyond-layout p, .film-note { font-size: 16px; }
   .personal-quote { margin-top: 27px; padding-left: 15px; }
