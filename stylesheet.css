@@ -263,16 +263,16 @@ strong { font-weight: 600; }
 
 .patents-section { font-family: "Montserrat", sans-serif; font-size: 15px; line-height: 1.6; color: #333; }
 .patents-section .section-title { font-family: inherit; font-size: 30px; font-weight: 400; line-height: 1.5; }
-.patent-entry { padding: 20px 0; border-bottom: 1px solid #f1f1f1; overflow-wrap: anywhere; }
+.patent-entry { padding: 14px 0; border-bottom: 1px solid #f1f1f1; overflow-wrap: anywhere; }
 .patent-entry:first-of-type { padding-top: 0; }
 .patent-entry:last-child { border-bottom: none; padding-bottom: 0; }
-.patent-entry h3 { margin: 0 0 6px; font-family: inherit; font-size: 17px; font-weight: 700; line-height: 1.5; color: #111; }
-.patent-inventors { margin: 0 0 6px; }
-.patent-meta, .patent-status { margin: 3px 0 0; font-size: 14px; color: #666; }
-.patent-asof { white-space: normal; }
-.patent-links { margin-top: 8px; }
-.patent-links a { color: var(--link-color); font-weight: 500; }
-.patent-links a:hover { color: var(--accent-orange); }
+.patent-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 4px 20px; }
+.patent-entry h3 { margin: 0; min-width: 0; font-family: inherit; font-size: 17px; font-weight: 700; line-height: 1.5; color: #111; }
+.patent-date { flex-shrink: 0; font-size: 14px; font-weight: 500; color: #666; white-space: nowrap; }
+.patent-inventors { margin: 3px 0 0; }
+.patent-meta { margin: 3px 0 0; font-size: 14px; color: #666; }
+.patent-meta a { color: var(--link-color); font-weight: 500; }
+.patent-meta a:hover { color: var(--accent-orange); }
 
 .honors-section { font-family: "Montserrat", sans-serif; font-size: 15px; line-height: 1.6; color: #333; }
 .honors-section .section-title { font-family: inherit; font-size: 30px; font-weight: 400; line-height: 1.5; }
@@ -367,6 +367,7 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .institution-copy p { font-size: 15.5px; }
   .institution-date { font-size: 15px; white-space: normal; }
   .patents-section .section-title, .honors-section .section-title { font-size: 1.6rem; }
+  .patent-heading { flex-direction: column; gap: 2px; }
   .awards-list li { grid-template-columns: 1fr; gap: 4px; }
   .award-year { font-size: 13px; }
   .language-score { font-size: 16px; }
