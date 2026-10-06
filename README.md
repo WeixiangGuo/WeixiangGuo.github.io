@@ -19,6 +19,7 @@ The site uses static HTML, CSS, and JavaScript with no package installation or b
 ## Editing
 
 - `index.html`: biography, research, projects, education, and links.
+- `beyond.html` / `beyond.css`: separate basketball, life, and travel page, linked from the homepage navigation. Add approved photos as `figure.moment` entries in `.moments-grid`, with accurate captions, image dimensions, and `data-figure` links for enlargement. The initial photo reuses the already-public mountain portrait; private source photos are not published automatically.
 - `stylesheet.css`: layout, typography, colors, and responsive styles.
 - `navigation.js`: responsive section navigation.
 - `interactions.js`: research filtering and figure preview.
