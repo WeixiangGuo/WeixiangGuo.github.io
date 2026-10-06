@@ -277,12 +277,13 @@ strong { font-weight: 600; }
 .honors-section { font-family: "Montserrat", sans-serif; font-size: 15px; line-height: 1.6; color: #333; }
 .honors-section .section-title { font-family: inherit; font-size: 30px; font-weight: 400; line-height: 1.5; }
 .awards-list { list-style: none; padding: 0; margin: 0; }
-.awards-list li { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 18px; padding: 14px 0; border-bottom: 1px solid #f1f1f1; }
+.awards-list li { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 12px; padding: 3px 0; line-height: 1.5; }
 .awards-list li:first-child { padding-top: 0; }
-.awards-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.awards-list li:last-child { padding-bottom: 0; }
+.awards-list .award-scholarships-start { margin-top: 10px; }
 .awards-list strong { font-weight: 600; color: #111; }
 .award-year { font-size: 14px; color: #666; font-weight: 500; font-variant-numeric: tabular-nums; }
-.award-detail { margin: 3px 0 0; font-size: 14px; color: #666; }
+.awards-note { margin: 10px 0 0 116px; font-size: 13px; color: #666; font-style: italic; }
 .language-score { font-size: 17px; line-height: 1.65; }
 .language-score span { color: var(--text-secondary); }
 .beyond-layout p { font-size: 16.5px; line-height: 1.7; }
@@ -368,8 +369,9 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .institution-date { font-size: 15px; white-space: normal; }
   .patents-section .section-title, .honors-section .section-title { font-size: 1.6rem; }
   .patent-heading { flex-direction: column; gap: 2px; }
-  .awards-list li { grid-template-columns: 1fr; gap: 4px; }
+  .awards-list li { grid-template-columns: 94px minmax(0, 1fr); gap: 9px; }
   .award-year { font-size: 13px; }
+  .awards-note { margin-left: 0; }
   .language-score { font-size: 16px; }
   .beyond-layout p, .film-note { font-size: 16px; }
   .personal-quote { margin-top: 27px; padding-left: 15px; }
