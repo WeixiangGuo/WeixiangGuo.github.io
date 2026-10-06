@@ -282,6 +282,7 @@ strong { font-weight: 600; }
 .awards-list li:last-child { padding-bottom: 0; }
 .awards-list .award-scholarships-start { margin-top: 10px; }
 .awards-list strong { font-weight: 600; color: #111; }
+.awards-list .award-rank { color: var(--link-color); }
 .award-year { font-size: 14px; color: #666; font-weight: 500; font-variant-numeric: tabular-nums; }
 .awards-note { margin: 10px 0 0 116px; font-size: 13px; color: #666; font-style: italic; }
 .language-score { font-size: 17px; line-height: 1.65; }
