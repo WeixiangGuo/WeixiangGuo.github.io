@@ -19,8 +19,8 @@
 .basketball-photo img { width: 100%; height: auto; }
 .basketball-highlights { margin: 0; padding-left: 22px; border-left: 2px solid #e2e9ed; }
 .basketball-highlights div + div { margin-top: 16px; }
-.basketball-highlights dt { font-size: 15px; font-weight: 600; line-height: 1.5; color: var(--link-color); }
-.basketball-highlights dd { margin: 3px 0 0; font-size: 12px; line-height: 1.6; font-weight: 400; color: #666; }
+.basketball-highlights dt { font-size: 15px; font-weight: 600; line-height: 1.5; color: #000; }
+.basketball-highlights dd { margin: 3px 0 0; font-size: 12px; line-height: 1.6; font-weight: 400; color: #000; }
 .moments-intro { color: var(--text-secondary); margin: -8px 0 22px; }
 .moments-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .moment { min-width: 0; }
