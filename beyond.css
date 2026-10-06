@@ -6,8 +6,8 @@
 .beyond-header nav { display: flex; gap: 24px; }
 .beyond-header nav a { color: var(--text-secondary); }
 .beyond-header nav a[aria-current="page"] { color: var(--link-color); text-decoration: underline; text-underline-offset: 7px; }
-.beyond-intro { padding: 64px 0 38px; }
-.beyond-intro h1 { margin: 0; font-family: inherit; font-size: 30px; line-height: 1.5; font-weight: 400; }
+.beyond-intro { padding: 54px 0 32px; }
+.beyond-intro h1 { margin: 0; font-family: inherit; font-size: clamp(36px, 4vw, 44px); line-height: 1.2; font-weight: 700; letter-spacing: -.025em; }
 .beyond-jump-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 22px; font-size: 13px; }
 .beyond-section { padding: 30px 0 40px; scroll-margin-top: 24px; }
 .beyond-section + .beyond-section { border-top: 1px solid var(--line); }
@@ -38,7 +38,7 @@
   .moments-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 }
 @media (max-width: 640px) {
-  .beyond-intro h1, .beyond-section h2 { font-size: 1.6rem; }
+  .beyond-section h2 { font-size: 1.6rem; }
 }
 @media (max-width: 440px) {
   .moments-grid { grid-template-columns: 1fr; }
