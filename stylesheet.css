@@ -369,7 +369,7 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .institution-date { font-size: 15px; white-space: normal; }
   .patents-section .section-title, .honors-section .section-title { font-size: 1.6rem; }
   .patent-heading { flex-direction: column; gap: 2px; }
-  .awards-list li { grid-template-columns: 94px minmax(0, 1fr); gap: 9px; }
+  .awards-list li { grid-template-columns: 104px minmax(0, 1fr); gap: 9px; }
   .award-year { font-size: 13px; }
   .awards-note { margin-left: 0; }
   .language-score { font-size: 16px; }
